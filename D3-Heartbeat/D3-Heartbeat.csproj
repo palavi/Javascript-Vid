@@ -27299,9 +27299,9 @@
     <Content Include="src\components\approot\approot.directive.js" />
     <Content Include="src\components\approot\approot.html" />
     <Content Include="src\components\approot\approot.module.js" />
-    <Content Include="src\components\dashboard\dashboard.directive.js" />
-    <Content Include="src\components\dashboard\dashboard.html" />
-    <Content Include="src\components\dashboard\dashboard.module.js" />
+    <Content Include="src\components\pulse-graph\pulse-graph.module.js" />
+    <Content Include="src\components\pulse-graph\pulse-graph.directive.js" />
+    <Content Include="src\components\pulse-graph\pulse-graph.html" />
     <Content Include="src\components\topnav\topnav.directive.js" />
     <Content Include="src\components\topnav\topnav.html" />
     <Content Include="src\components\topnav\topnav.module.js" />
@@ -27316,7 +27316,10 @@
     <Content Include="src\framework\logger\logger.module.js" />
     <Content Include="src\images\favicon.png" />
     <Content Include="src\index.html" />
-    <Content Include="test\components\dashboard\dashboard.controller.spec.js" />
+    <Content Include="src\modules\monitor-beats\beat.module.js" />
+    <Content Include="src\modules\monitor-beats\beat.route.js" />
+    <Content Include="src\modules\monitor-beats\beat.controller.js" />
+    <Content Include="src\modules\monitor-beats\theme\red\beat.html" />
     <Content Include="test\helpers\bind-polyfill.js" />
     <Content Include="test\server-integration\dummy.service.spec.js" />
   </ItemGroup>
@@ -27594,6 +27597,9 @@
     <TypeScriptCompile Include="node_modules\rx\ts\rx.virtualtime.d.ts" />
     <TypeScriptCompile Include="node_modules\rx\ts\rx.virtualtime.es6.d.ts" />
     <TypeScriptCompile Include="node_modules\tweetnacl\nacl.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test\components\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>

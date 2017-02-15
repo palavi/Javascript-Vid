@@ -15,9 +15,13 @@
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('dashboard', {
+            //.state('dashboard', {
+            //    url: '/',
+            //    template: '<tmpl-dashboard></tmpl-dashboard>'
+            //})
+            .state('beat', {
                 url: '/',
-                template: '<tmpl-dashboard></tmpl-dashboard>'
+                templateUrl:'modules/monitor-beats/theme/red/beat.html'
             });
     }
 })();
